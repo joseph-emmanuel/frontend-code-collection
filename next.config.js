@@ -2,6 +2,8 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  basePath: "/frontend-code-collection",
+  assetPrefix:"/frontend-code-collection",
 };
 
 module.exports = {
