@@ -37,7 +37,11 @@ jobs:
           fi   
     - run: npm ci
     - run: npm run build 
+      env: 
+        NEXT_PUBLIC_BASE_PATH: /frontend-code-collection
     - run: npm run export
+      env: 
+        NEXT_PUBLIC_BASE_PATH: /frontend-code-collection
     - run: touch ./out/.nojekyll
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4

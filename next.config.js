@@ -5,8 +5,8 @@ const nextConfig = {
 };
 
 module.exports = {
-  basePath: "/frontend-code-collection",
-  assetPrefix: "/frontend-code-collection",
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH,
+  assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH,
   experimental: {
     images: {
       unoptimized: true,
